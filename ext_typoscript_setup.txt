@@ -1,0 +1,22 @@
+config.tx_extbase{
+    features.rewrittenPropertyMapper = 1
+    persistence{
+        enableAutomaticCacheClearing = 1
+        updateReferenceIndex = 0
+        classes{
+            RWB\Rwbfeupload\Domain\Model\FileReference {
+                mapping {
+                    tableName = sys_file_reference
+                    columns {
+                        uid_local.mapOnProperty = originalFileIdentifier
+                    }
+                }
+            }
+        }
+        objects {
+            TYPO3\CMS\Extbase\Domain\Model\FileReference.className = RWB\Rwbfeupload\Domain\Model\FileReference
+        }
+        updateReferenceIndex = 1
+    }
+
+}

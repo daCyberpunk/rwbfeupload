@@ -1,0 +1,35 @@
+{namespace mu=Fab\MediaUpload\ViewHelpers}
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+	 xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+	 xmlns:rwb="http://typo3.org/ns/RWB/Rwbprovider/ViewHelpers"
+	 xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+
+<table class="tx-rwbfeupload" xmlns:f="http://www.w3.org/1999/html">
+	<tr>
+		<td>
+			<f:translate key="tx_rwbfeupload_domain_model_main.title" />
+		</td>
+		<td>
+		{main.title}
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<f:translate key="tx_rwbfeupload_domain_model_main.file" />
+		</td>
+		<td>
+			<f:for each="{main.file}" as="file">
+				<div class="row">
+					 <span class="text-uppercase"><span data-reference="{file.originalResource.uid}" id="open" name="open" class=""><a class="file-link" target="_blank" href="{file.originalResource.publicUrl}"><i class="material-icons">open_in_new</i></a></span>
+					 </span>
+					<div class="col-xs-9">
+						{file.originalResource.originalFile.name}
+						<f:image src="{file.originalResource.uid}" treatIdAsReference="1"/>
+					</div>
+				</div>
+			</f:for>
+
+		</td>
+	</tr>
+</table>
+	</div>

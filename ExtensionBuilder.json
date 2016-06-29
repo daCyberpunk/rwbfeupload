@@ -1,0 +1,118 @@
+{
+    "modules": [
+        {
+            "config": {
+                "position": [
+                    130,
+                    74
+                ]
+            },
+            "name": "New Model Object",
+            "value": {
+                "actionGroup": {
+                    "_default0_list": true,
+                    "_default1_show": true,
+                    "_default2_new_create": true,
+                    "_default3_edit_update": true,
+                    "_default4_delete": true,
+                    "customActions": [
+                        ""
+                    ]
+                },
+                "name": "Main",
+                "objectsettings": {
+                    "addDeletedField": true,
+                    "addHiddenField": true,
+                    "addStarttimeEndtimeFields": false,
+                    "aggregateRoot": true,
+                    "categorizable": false,
+                    "description": "",
+                    "mapToTable": "",
+                    "parentClass": "",
+                    "sorting": true,
+                    "type": "Entity",
+                    "uid": "1443988038448"
+                },
+                "propertyGroup": {
+                    "properties": [
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": false,
+                            "propertyIsRequired": false,
+                            "propertyName": "title",
+                            "propertyType": "String",
+                            "uid": "717719506070"
+                        },
+                        {
+                            "allowedFileTypes": "",
+                            "maxItems": "1",
+                            "propertyDescription": "",
+                            "propertyIsExcludeField": false,
+                            "propertyIsRequired": false,
+                            "propertyName": "file",
+                            "propertyType": "File",
+                            "uid": "73774294353"
+                        }
+                    ]
+                },
+                "relationGroup": {
+                    "relations": [
+
+                    ]
+                }
+            }
+        }
+    ],
+    "properties": {
+        "backendModules": [
+
+        ],
+        "description": "",
+        "emConf": {
+            "category": "plugin",
+            "custom_category": "",
+            "dependsOn": "typo3 => 7.6.0-7.6.99\nmedia_upload =>\n",
+            "disableLocalization": false,
+            "disableVersioning": false,
+            "skipGenerateDocumentationTemplate": false,
+            "sourceLanguage": "de",
+            "state": "alpha",
+            "targetVersion": "7.6.0-7.6.99",
+            "version": "1.0.0"
+        },
+        "extensionKey": "rwbfeupload",
+        "name": "RWB Example Usage for EXT media_upload (FE file upload)",
+        "originalExtensionKey": "",
+        "originalVendorName": "",
+        "persons": [
+            {
+                "company": "R\u00f6der Webdesign Berlin",
+                "email": "mail@falk-roeder.de",
+                "name": "Falk R\u00f6der",
+                "role": "Developer"
+            }
+        ],
+        "plugins": [
+            {
+                "actions": {
+                    "controllerActionCombinations": "Main => list, show, new, create, delete, update",
+                    "noncacheableActions": "",
+                    "switchableActions": ""
+                },
+                "key": "rwbfeupload",
+                "name": "RWB FE Upload Example"
+            }
+        ],
+        "vendorName": "RWB"
+    },
+    "wires": [
+
+    ],
+    "log": {
+        "last_modified": "2016-06-29 09:57",
+        "extension_builder_version": "7.6.0",
+        "be_user": " (1)"
+    }
+}

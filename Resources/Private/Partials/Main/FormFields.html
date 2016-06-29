@@ -1,0 +1,14 @@
+{namespace mu=Fab\MediaUpload\ViewHelpers}
+
+
+		<label for="title">
+			<f:translate key="tx_rwbfeupload_domain_model_main.title" />
+		</label><br />
+		<f:form.textfield property="title" /><br />
+		<label for="file">
+			<f:translate key="tx_rwbfeupload_domain_model_main.file" />
+		</label><br />
+<f:debug title=" | FormFields.html:11" maxDepth="8" inline="FALSE" >{_all}</f:debug>
+		<mu:widget.upload allowedExtensions="jpg, png, txt, pdf, doc, docx, xls, xlsx, gif, mp4" maximumSize="10" value="{newMain.file}" storage="{settings.storage}" property="file" /><br /><br />
+
+

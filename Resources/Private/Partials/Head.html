@@ -1,0 +1,19 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+     xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
+     xmlns:f="http://typo3.org/ns/fluid/ViewHelpers">
+
+    <f:section name="main">
+
+<f:comment>
+</f:comment>
+
+        <v:asset.script path="{f:uri.resource(path:'Js/jquery.min.js')}" name="jquery" overwrite="1"  allowMoveToFooter="0" />
+        <v:asset.script path="{f:uri.resource(path:'Js/jquery.fineuploader.js')}" dependencies="jquery" name="FU" overwrite="1"  allowMoveToFooter="0" />
+        <v:asset.script path="{f:uri.resource(path:'Js/main.js')}" name="ma" dependencies="FU" overwrite="0"  allowMoveToFooter="0" />
+
+
+
+
+    </f:section>
+
+</div>
